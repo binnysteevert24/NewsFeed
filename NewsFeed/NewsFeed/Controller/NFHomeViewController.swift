@@ -59,7 +59,7 @@ class NFHomeViewController: UIViewController {
     */
     @objc private func newsButtonClick(_ sender: UIButton) {
         
-        self.navigationController?.pushViewController(UIViewController(), animated: true)
+        self.navigationController?.pushViewController(NFNewsViewController(), animated: true)
     }
 
 }
