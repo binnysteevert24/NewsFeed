@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DBC9A38C204E6763004F2ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A38B204E6763004F2ABD /* AppDelegate.swift */; };
 		DBC9A393204E6763004F2ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC9A392204E6763004F2ABD /* Assets.xcassets */; };
+		DBC9A3B3204E7648004F2ABD /* NFWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3B2204E7648004F2ABD /* NFWebServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		DBC9A38B204E6763004F2ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBC9A392204E6763004F2ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC9A397204E6763004F2ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC9A3B2204E7648004F2ABD /* NFWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFWebServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +51,51 @@
 			isa = PBXGroup;
 			children = (
 				DBC9A38B204E6763004F2ABD /* AppDelegate.swift */,
+				DBC9A3A3204E6D59004F2ABD /* Controller */,
+				DBC9A3A2204E6D59004F2ABD /* Manager */,
+				DBC9A3A1204E6D59004F2ABD /* Modal */,
+				DBC9A39F204E6D59004F2ABD /* Utility */,
+				DBC9A3A0204E6D59004F2ABD /* View */,
 				DBC9A392204E6763004F2ABD /* Assets.xcassets */,
 				DBC9A397204E6763004F2ABD /* Info.plist */,
 			);
 			path = NewsFeed;
+			sourceTree = "<group>";
+		};
+		DBC9A39F204E6D59004F2ABD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DBC9A3A0204E6D59004F2ABD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBC9A3A1204E6D59004F2ABD /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		DBC9A3A2204E6D59004F2ABD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DBC9A3B2204E7648004F2ABD /* NFWebServiceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DBC9A3A3204E6D59004F2ABD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC9A38C204E6763004F2ABD /* AppDelegate.swift in Sources */,
+				DBC9A3B3204E7648004F2ABD /* NFWebServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
