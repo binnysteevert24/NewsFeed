@@ -14,11 +14,11 @@
 		DBC9A3C4204EBB3B004F2ABD /* NFNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C2204EBB3B004F2ABD /* NFNews.swift */; };
 		DBC9A3C5204EBB3B004F2ABD /* NFItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C3204EBB3B004F2ABD /* NFItem.swift */; };
 		DBC9A3C7204EBB47004F2ABD /* NFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */; };
-		DBC9A3CA204EBBAC004F2ABD /* NFImageView+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */; };
-		DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */; };
 		DBC9A3CD204EBD09004F2ABD /* NFItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */; };
 		DBC9A3CF204EBD16004F2ABD /* NFViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */; };
 		DBC9A3D1204EBD98004F2ABD /* NFNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3D0204EBD98004F2ABD /* NFNewsViewController.swift */; };
+		DBC9A3DF204ECD58004F2ABD /* NFImageView+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3DD204ECD58004F2ABD /* NFImageView+UIImageView.swift */; };
+		DBC9A3E0204ECD58004F2ABD /* NFViewController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3DE204ECD58004F2ABD /* NFViewController+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		DBC9A3C2204EBB3B004F2ABD /* NFNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFNews.swift; sourceTree = "<group>"; };
 		DBC9A3C3204EBB3B004F2ABD /* NFItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFItem.swift; sourceTree = "<group>"; };
 		DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFConstant.swift; sourceTree = "<group>"; };
-		DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFImageView+UIImageView.swift"; sourceTree = "<group>"; };
-		DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFViewController+UIViewController.swift"; sourceTree = "<group>"; };
 		DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFItemTableViewCell.swift; sourceTree = "<group>"; };
 		DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFViewItem.swift; sourceTree = "<group>"; };
 		DBC9A3D0204EBD98004F2ABD /* NFNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFNewsViewController.swift; sourceTree = "<group>"; };
+		DBC9A3DD204ECD58004F2ABD /* NFImageView+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFImageView+UIImageView.swift"; sourceTree = "<group>"; };
+		DBC9A3DE204ECD58004F2ABD /* NFViewController+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFViewController+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				DBC9A38B204E6763004F2ABD /* AppDelegate.swift */,
-				DBC9A3BB204EBA4E004F2ABD /* Helper */,
+				DBC9A3A1204E6D59004F2ABD /* Modal */,
+				DBC9A3A0204E6D59004F2ABD /* View */,
 				DBC9A3A3204E6D59004F2ABD /* Controller */,
 				DBC9A3A2204E6D59004F2ABD /* Manager */,
-				DBC9A3A1204E6D59004F2ABD /* Modal */,
 				DBC9A39F204E6D59004F2ABD /* Utility */,
-				DBC9A3A0204E6D59004F2ABD /* View */,
+				DBC9A3DC204ECD58004F2ABD /* Helper */,
 				DBC9A392204E6763004F2ABD /* Assets.xcassets */,
 				DBC9A397204E6763004F2ABD /* Info.plist */,
 			);
@@ -124,11 +124,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DBC9A3BB204EBA4E004F2ABD /* Helper */ = {
+		DBC9A3DC204ECD58004F2ABD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */,
-				DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */,
+				DBC9A3DD204ECD58004F2ABD /* NFImageView+UIImageView.swift */,
+				DBC9A3DE204ECD58004F2ABD /* NFViewController+UIViewController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -204,17 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC9A3CA204EBBAC004F2ABD /* NFImageView+UIImageView.swift in Sources */,
 				DBC9A3C5204EBB3B004F2ABD /* NFItem.swift in Sources */,
 				DBC9A3D1204EBD98004F2ABD /* NFNewsViewController.swift in Sources */,
 				DBC9A3C4204EBB3B004F2ABD /* NFNews.swift in Sources */,
 				DBC9A3C1204EBA81004F2ABD /* NFHomeViewController.swift in Sources */,
 				DBC9A3CD204EBD09004F2ABD /* NFItemTableViewCell.swift in Sources */,
+				DBC9A3DF204ECD58004F2ABD /* NFImageView+UIImageView.swift in Sources */,
 				DBC9A3CF204EBD16004F2ABD /* NFViewItem.swift in Sources */,
 				DBC9A38C204E6763004F2ABD /* AppDelegate.swift in Sources */,
-				DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */,
 				DBC9A3B3204E7648004F2ABD /* NFWebServiceManager.swift in Sources */,
 				DBC9A3C7204EBB47004F2ABD /* NFConstant.swift in Sources */,
+				DBC9A3E0204ECD58004F2ABD /* NFViewController+UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
