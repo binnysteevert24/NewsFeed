@@ -103,16 +103,16 @@ final class NFWebServiceManager {
         }
     }
     
-     typealias CallBackHandler = ((NFResponseData) -> ())
+    typealias CallBackHandler = ((NFResponseData) -> ())
     
     /**
      asynchronous Request to handle webservice call.
      
      - parameter requestType: requesting type to get appropriete response.
      - parameter completionHandler: call back handler.
-
-    */
-     class func request(_ requestType: NFRequestType, completionHandler: CallBackHandler?) {
+     
+     */
+    class func request(_ requestType: NFRequestType, completionHandler: CallBackHandler?) {
         
         guard let requestURL = requestType.requestedURL() else {
             

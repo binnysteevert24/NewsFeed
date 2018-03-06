@@ -10,23 +10,23 @@ import UIKit
 
 /// Home page contain button to show news content
 class NFHomeViewController: UIViewController {
-
-   private let button: UIButton = UIButton()
-
+    
+    private let button: UIButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configure()
     }
     
     /**
-    initial configuration.
+     initial configuration.
      */
     func configure() {
         
         title = "Home"
         view.backgroundColor = UIColor.white
-       
+        
         button.setTitle("News", for: .normal)
         button.addTarget(self, action: #selector(NFHomeViewController.newsButtonClick(_:)), for: UIControlEvents.touchUpInside)
         button.backgroundColor = UIColor.gray
@@ -56,10 +56,10 @@ class NFHomeViewController: UIViewController {
      news button touch up inside event handler.
      
      - parameter sender: button object.
-    */
+     */
     @objc private func newsButtonClick(_ sender: UIButton) {
         
         self.navigationController?.pushViewController(NFNewsViewController(), animated: true)
     }
-
+    
 }

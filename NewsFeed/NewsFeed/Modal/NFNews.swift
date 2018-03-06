@@ -12,7 +12,7 @@ final class NFNews {
     
     private(set) var title: String! = nil
     private(set) var rows: [NFItem]! = []
- 
+    
     /// dictionary to object
     convenience init(dictionary: [String:Any?]) {
         self.init()

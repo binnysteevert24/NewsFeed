@@ -64,7 +64,7 @@ extension NFNews {
         return viewItems
     }
     /// placeholder object for news
-  class func placeHolder() -> NFNews {
+    class func placeHolder() -> NFNews {
         
         let itemDictionary: [String: String] = ["title": "\t\t\t", ",description": "    \t\n\t\n\t\n", "imageHref": ""]
         let newsDictionary = ["title": "About Canada", "rows": [itemDictionary, itemDictionary, itemDictionary]] as [String : Any]

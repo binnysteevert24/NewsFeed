@@ -8,7 +8,7 @@
 
 import Foundation
 /// constant strings
- struct NFConstant {
+struct NFConstant {
     
     static let title = "title"
     static let description = "description"
@@ -17,7 +17,7 @@ import Foundation
 }
 
 /// dispatch label constant strings
- struct NFDispatchQueueLabel {
+struct NFDispatchQueueLabel {
     
     static let webService: String = "com.webService.queue"
     static let imageDownload = "com.image.queue"
