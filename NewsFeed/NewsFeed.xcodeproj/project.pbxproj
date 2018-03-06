@@ -18,6 +18,7 @@
 		DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */; };
 		DBC9A3CD204EBD09004F2ABD /* NFItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */; };
 		DBC9A3CF204EBD16004F2ABD /* NFViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */; };
+		DBC9A3D1204EBD98004F2ABD /* NFNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3D0204EBD98004F2ABD /* NFNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFViewController+UIViewController.swift"; sourceTree = "<group>"; };
 		DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFItemTableViewCell.swift; sourceTree = "<group>"; };
 		DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFViewItem.swift; sourceTree = "<group>"; };
+		DBC9A3D0204EBD98004F2ABD /* NFNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		DBC9A3A3204E6D59004F2ABD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9A3D0204EBD98004F2ABD /* NFNewsViewController.swift */,
 				DBC9A3C0204EBA81004F2ABD /* NFHomeViewController.swift */,
 			);
 			path = Controller;
@@ -203,6 +206,7 @@
 			files = (
 				DBC9A3CA204EBBAC004F2ABD /* NFImageView+UIImageView.swift in Sources */,
 				DBC9A3C5204EBB3B004F2ABD /* NFItem.swift in Sources */,
+				DBC9A3D1204EBD98004F2ABD /* NFNewsViewController.swift in Sources */,
 				DBC9A3C4204EBB3B004F2ABD /* NFNews.swift in Sources */,
 				DBC9A3C1204EBA81004F2ABD /* NFHomeViewController.swift in Sources */,
 				DBC9A3CD204EBD09004F2ABD /* NFItemTableViewCell.swift in Sources */,
