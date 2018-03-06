@@ -36,8 +36,8 @@ class NFHomeViewController: UIViewController {
         
         let viewsDict = ["button": button] as [String : Any]
         
-        let descHorizontal = "|-(30)-[button]-(30)-|"
-        let descVertical = "V:|-(<=200)-[button(100)]"
+        let descHorizontal = "|-(<=50)-[button]-(<=50)-|"
+        let descVertical = "V:|-(<=200@1000)-[button(100@500)]"
         
         let descHorizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: descHorizontal,
                                                                        options: NSLayoutFormatOptions.alignAllCenterY,
