@@ -10,6 +10,12 @@
 		DBC9A38C204E6763004F2ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A38B204E6763004F2ABD /* AppDelegate.swift */; };
 		DBC9A393204E6763004F2ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC9A392204E6763004F2ABD /* Assets.xcassets */; };
 		DBC9A3B3204E7648004F2ABD /* NFWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3B2204E7648004F2ABD /* NFWebServiceManager.swift */; };
+		DBC9A3C1204EBA81004F2ABD /* NFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C0204EBA81004F2ABD /* NFHomeViewController.swift */; };
+		DBC9A3C4204EBB3B004F2ABD /* NFNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C2204EBB3B004F2ABD /* NFNews.swift */; };
+		DBC9A3C5204EBB3B004F2ABD /* NFItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C3204EBB3B004F2ABD /* NFItem.swift */; };
+		DBC9A3C7204EBB47004F2ABD /* NFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */; };
+		DBC9A3CA204EBBAC004F2ABD /* NFImageView+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */; };
+		DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +24,12 @@
 		DBC9A392204E6763004F2ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC9A397204E6763004F2ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBC9A3B2204E7648004F2ABD /* NFWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFWebServiceManager.swift; sourceTree = "<group>"; };
+		DBC9A3C0204EBA81004F2ABD /* NFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFHomeViewController.swift; sourceTree = "<group>"; };
+		DBC9A3C2204EBB3B004F2ABD /* NFNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFNews.swift; sourceTree = "<group>"; };
+		DBC9A3C3204EBB3B004F2ABD /* NFItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFItem.swift; sourceTree = "<group>"; };
+		DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFConstant.swift; sourceTree = "<group>"; };
+		DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFImageView+UIImageView.swift"; sourceTree = "<group>"; };
+		DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFViewController+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				DBC9A38B204E6763004F2ABD /* AppDelegate.swift */,
+				DBC9A3BB204EBA4E004F2ABD /* Helper */,
 				DBC9A3A3204E6D59004F2ABD /* Controller */,
 				DBC9A3A2204E6D59004F2ABD /* Manager */,
 				DBC9A3A1204E6D59004F2ABD /* Modal */,
@@ -65,6 +78,7 @@
 		DBC9A39F204E6D59004F2ABD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -79,6 +93,8 @@
 		DBC9A3A1204E6D59004F2ABD /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9A3C3204EBB3B004F2ABD /* NFItem.swift */,
+				DBC9A3C2204EBB3B004F2ABD /* NFNews.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -94,8 +110,18 @@
 		DBC9A3A3204E6D59004F2ABD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9A3C0204EBA81004F2ABD /* NFHomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBC9A3BB204EBA4E004F2ABD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */,
+				DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC9A3CA204EBBAC004F2ABD /* NFImageView+UIImageView.swift in Sources */,
+				DBC9A3C5204EBB3B004F2ABD /* NFItem.swift in Sources */,
+				DBC9A3C4204EBB3B004F2ABD /* NFNews.swift in Sources */,
+				DBC9A3C1204EBA81004F2ABD /* NFHomeViewController.swift in Sources */,
 				DBC9A38C204E6763004F2ABD /* AppDelegate.swift in Sources */,
+				DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */,
 				DBC9A3B3204E7648004F2ABD /* NFWebServiceManager.swift in Sources */,
+				DBC9A3C7204EBB47004F2ABD /* NFConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

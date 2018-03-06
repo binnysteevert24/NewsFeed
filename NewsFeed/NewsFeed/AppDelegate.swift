@@ -20,8 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.darkText
-        window?.rootViewController = UINavigationController(rootViewController: UIViewController())
+        window?.rootViewController = UINavigationController(rootViewController: NFHomeViewController())
         window?.makeKeyAndVisible()
+        
+        let builder = NFBuilder { builder in
+            builder.environment = .development
+            builder.timeOut = 05.0
+        }
+        NFWebServiceManager.configuration(builder)
         
         return true
     }
