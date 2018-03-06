@@ -16,6 +16,8 @@
 		DBC9A3C7204EBB47004F2ABD /* NFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */; };
 		DBC9A3CA204EBBAC004F2ABD /* NFImageView+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */; };
 		DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */; };
+		DBC9A3CD204EBD09004F2ABD /* NFItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */; };
+		DBC9A3CF204EBD16004F2ABD /* NFViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		DBC9A3C6204EBB47004F2ABD /* NFConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFConstant.swift; sourceTree = "<group>"; };
 		DBC9A3C8204EBBAC004F2ABD /* NFImageView+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFImageView+UIImageView.swift"; sourceTree = "<group>"; };
 		DBC9A3C9204EBBAC004F2ABD /* NFViewController+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFViewController+UIViewController.swift"; sourceTree = "<group>"; };
+		DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFItemTableViewCell.swift; sourceTree = "<group>"; };
+		DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFViewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		DBC9A3A0204E6D59004F2ABD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9A3CC204EBD09004F2ABD /* NFItemTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		DBC9A3A1204E6D59004F2ABD /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9A3CE204EBD16004F2ABD /* NFViewItem.swift */,
 				DBC9A3C3204EBB3B004F2ABD /* NFItem.swift */,
 				DBC9A3C2204EBB3B004F2ABD /* NFNews.swift */,
 			);
@@ -199,6 +205,8 @@
 				DBC9A3C5204EBB3B004F2ABD /* NFItem.swift in Sources */,
 				DBC9A3C4204EBB3B004F2ABD /* NFNews.swift in Sources */,
 				DBC9A3C1204EBA81004F2ABD /* NFHomeViewController.swift in Sources */,
+				DBC9A3CD204EBD09004F2ABD /* NFItemTableViewCell.swift in Sources */,
+				DBC9A3CF204EBD16004F2ABD /* NFViewItem.swift in Sources */,
 				DBC9A38C204E6763004F2ABD /* AppDelegate.swift in Sources */,
 				DBC9A3CB204EBBAC004F2ABD /* NFViewController+UIViewController.swift in Sources */,
 				DBC9A3B3204E7648004F2ABD /* NFWebServiceManager.swift in Sources */,
