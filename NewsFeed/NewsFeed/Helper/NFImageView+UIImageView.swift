@@ -26,11 +26,11 @@ extension UIImageView  {
         
         let work = DispatchWorkItem {
             
-            NFWebServiceManager.request(NFWebServiceManager.NFRequestType.imageURLPath(url)) {  (responseData) in
+            NFWebServiceManager.aSynchronousRequest(NFWebServiceManager.NFRequestType.imageURLPath(url), completionHandler: {  (responseData) in
                 
                 switch (responseData) {
                     
-                case let .responseData(data):
+                case let .imageData(data):
                     
                     if let image = UIImage(data: data) {
                         
@@ -45,20 +45,14 @@ extension UIImageView  {
                             DispatchQueue.main.async(execute:errorHandler)
                         }
                     }
-                case let .errorData(error):
-                    print("image download failure Error :\(error) ")
-                    
-                    if let errorHandler = failure {
-                        DispatchQueue.main.async(execute:errorHandler)
-                    }
-                case .unKnownError:
+                default:
                     print("image download failure Error : ")
                     
                     if let errorHandler = failure {
                         DispatchQueue.main.async(execute:errorHandler)
                     }
                 }
-            }
+            })
         }
         UIImageView.imageDownloadQueue?.async(execute: work)
     }

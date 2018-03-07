@@ -106,15 +106,20 @@ class NFNewsViewController: UIViewController, NFViewController {
                 if let viewItems = news.viewItems(oldViewItems: oldViewItems) {
                     
                     self?.newsList = viewItems
-                    self?.tableView.reloadData()
                 }
-   
-                
             case let .error(error):
+                self?.title = ""
+                self?.newsList = []
+
                 print("webservice Error  : \(error)")
-            case .unknownError: break
+            default:
+                self?.title = ""
+                self?.newsList = []
+
+                print("webservice Error")
             }
-            
+            self?.tableView.reloadData()
+
             completionHandler?()
         }
     }

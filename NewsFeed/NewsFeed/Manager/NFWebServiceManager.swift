@@ -65,6 +65,7 @@ final class NFWebServiceManager {
     enum NFResponseData {
         
         case errorData(Error)
+        case responseJSON([String: Any?])
         case responseData(Data)
         case unKnownError
     }
@@ -72,6 +73,7 @@ final class NFWebServiceManager {
     enum NFResponseType {
         
         case newsFeed(NFNews)
+        case imageData(Data)
         case error(Error)
         case unknownError
     }
@@ -112,7 +114,7 @@ final class NFWebServiceManager {
      - parameter completionHandler: call back handler.
      
      */
-    class func request(_ requestType: NFRequestType, completionHandler: CallBackHandler?) {
+    fileprivate class func request(_ requestType: NFRequestType, completionHandler: CallBackHandler?) {
         
         guard let requestURL = requestType.requestedURL() else {
             
@@ -142,4 +144,59 @@ final class NFWebServiceManager {
         })
     }
     
+    class func aSynchronousRequest(_ requestType: NFRequestType, completionHandler: @escaping ((NFWebServiceManager.NFResponseType) -> ())) {
+        
+        NFWebServiceManager.request(requestType) {(responseData) in
+            
+            switch (responseData) {
+                
+            case let .responseData(data):
+                
+                switch (requestType) {
+                    
+                case .newsFeed:
+                    
+                    let responseJSONData: NFResponseData = NFWebServiceManager.unwrappingResponse(data: data)
+                    
+                    if case let .responseJSON(jsonResult) = responseJSONData {
+                        
+                        let news = NFNews(dictionary: jsonResult)
+                        completionHandler(.newsFeed(news))
+                    }
+                    else if case let .errorData(error) = responseJSONData {
+                        completionHandler(.error(error))
+                    }
+                    else {
+                        completionHandler(.unknownError)
+                    }
+                    print("parsing Error : \(responseJSONData)")
+                    
+                case .imageURLPath(_):
+                    
+                    completionHandler(.imageData(data))
+                }
+            case let .errorData(error):
+                completionHandler(.error(error))
+            case .unKnownError:
+                completionHandler(.unknownError)
+            default: break
+            }
+        }
+    }
+    
+    fileprivate class func unwrappingResponse(data: Data) -> NFResponseData {
+        
+        do {
+            guard let latinString = String.init(data: data, encoding: String.Encoding.isoLatin1),
+                let encodedData = latinString.data(using: String.Encoding.utf8),
+                let jsonResult = try JSONSerialization.jsonObject(with: encodedData, options: JSONSerialization.ReadingOptions.init(rawValue: 0)) as? [String: Any?] else {
+                    
+                    return .unKnownError
+            }
+            return .responseJSON(jsonResult)
+        }
+        catch let error {
+            return .errorData(error)
+        }
+    }
 }
